@@ -12,10 +12,12 @@ https://code.google.com/p/winforensicaanalysis/downloads/detail?name=wfa3e.zip&c
 The tools include a file with detalied descriptions of every field. 
 
 #Five-field format
-The five-field structure is as follow, 
+The five-field structure is as follow,
+
 Time|Source|System|User|Description 
 
-An example of real raw timeline data, 
+An example of real raw timeline data,
+
 1087576057|EVT|REG-OIPK81M2WC8|N/A|LoadPerf/1000;Info;RSVP,QoS RSVP
 1087576059|EVT|REG-OIPK81M2WC8|N/A|LoadPerf/1000;Info;PSched,PSched
 1087576069|EVT|REG-OIPK81M2WC8|N/A|LoadPerf/1000;Info;RemoteAccess,Routing and Remote Access
