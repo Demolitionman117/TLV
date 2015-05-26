@@ -27,7 +27,7 @@ An example of real raw timeline data,
 1087577867|EVT|REG-OIPK81M2WC8|N/A|LoadPerf/1001;Info;WmiApRpl,WmiApRpl
 1087577867|EVT|REG-OIPK81M2WC8|N/A|LoadPerf/1000;Info;WmiApRpl,WmiApRpl
 
--------------------------------------------------------------------------------
+#
 
 #Structure in database
 The timeline data is structured as follows, 
