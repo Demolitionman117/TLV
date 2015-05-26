@@ -1,0 +1,24 @@
+﻿<Window x:Class="TimeLine_Visualiser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Timeline Visualizer" Height="433" Width="534" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Grid IsEnabled="True">
+        <TextBox x:Name="BrowseText" HorizontalAlignment="Left" Height="26" Margin="10,47,0,25" TextWrapping="Wrap" Text="Browse and load events file...." VerticalAlignment="Top" Width="389" Background="{x:Null}" IsEnabled="False" MaxWidth="390" MaxHeight="390" MinWidth="26" MinHeight="26"/>
+        <Button x:Name="BtnBrowse" Content="Browse" HorizontalAlignment="Left" Margin="424,47,25,25" VerticalAlignment="Top" Width="75" Background="{x:Null}" Click="BtnBrowse_Click"/>
+        <Button x:Name="BtnRun" Content="Run" HorizontalAlignment="Left" Margin="424,90,25,25" VerticalAlignment="Top" Width="75" Background="{x:Null}" Click="BtnRun_Click" IsEnabled="False"/>
+        <StackPanel x:Name="DataBase_info" HorizontalAlignment="Left" Height="217" Margin="10,166,0,0" VerticalAlignment="Top" Width="329" Background="#FFE0D9FB">
+            <Label Content="Database Credentials" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Separator Height="9" Margin="0"/>
+            <Label Content="Username" Margin="0,0,258,0"/>
+            <TextBox x:Name="db_usr_box" Height="23" TextWrapping="Wrap" Margin="5,0,94,0" Width="221" MinWidth="230" MaxWidth="230" MinHeight="23" MaxHeight="23" Text="neo4j"/>
+            <Label Content="Password" Height="28" Margin="0,0,258,0"/>
+            <PasswordBox x:Name="db_pass_box" Height="23" Margin="5,0,94,0" Padding="0,0,6,0" Width="230" MinWidth="230" MaxWidth="230" MinHeight="23" MaxHeight="23" Password="neo4j1"/>
+            <Label Content="Database Adress:Port " Margin="0,0,204,0"/>
+            <TextBox x:Name="db_url_box" Height="23" TextWrapping="Wrap" BorderThickness="1" Margin="5,0,0,0" Width="324" MinWidth="324" MaxWidth="324" Text="localhost:7474"/>
+        </StackPanel>
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="0,382,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Status_msg_box" Content="Ready" HorizontalAlignment="Left" Margin="45,387,0,-4" VerticalAlignment="Top" Height="22" MinHeight="19" MaxHeight="19" Width="468" Padding="0"/>
+        <Button x:Name="Btn_cancel" Content="Cancel" HorizontalAlignment="Left" Margin="424,134,25,25" VerticalAlignment="Top" Width="75" OpacityMask="#FF301D1D" Background="#FFFFCFF2" IsEnabled="False" Click="Btn_cancel_Click"/>
+        <Button x:Name="Btn_about" Content="?" HorizontalAlignment="Left" Margin="490,10,0,0" VerticalAlignment="Top" Width="28" Background="#FF438497" FontSize="16" Height="22" FontWeight="Bold" Click="Btn_about_Click"/>
+    </Grid>
+</Window>
