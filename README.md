@@ -49,16 +49,19 @@ The analysis is very easy to do with the following algorithms (cypher) typed dir
 structural similarity, the algorithms below shows events that share the same change time.
 
 //shows only similar times between EVT(Event Logg) and PREF(prefetch)
+
 MATCH (event1:EVT)-[:LastWrite]->(evtime:EventTime)<-[:LastWrite]-(event2:PREF)
 WITH event1.Description AS EVT, event2.Description AS PREF, evtime.Time AS Links
 RETURN  EVT,PREF,Links AS Time ORDER BY Time DESC
 
 //shows only similar times between EVT(Event Logg) and REG(Registry)
+
 MATCH (event1:EVT)-[:LastWrite]->(evtime:EventTime)<-[:LastWrite]-(event2:REG)
 WITH event1.Description AS EVT, event2.Description AS REG, evtime.Time AS Links
 RETURN  EVT,REG,Links AS Time ORDER BY Time DESC
 
 //shows only similar times between PREF(prefetch) and REG(Registry)
+
 MATCH (event1:PREF)-[:LastWrite]->(evtime:EventTime)<-[:LastWrite]-(event2:REG)
 WITH event1.Description AS PREF, event2.Description AS REG, evtime.Time AS Links
 RETURN  PREF,REG,Links AS Time ORDER BY Time DESC
