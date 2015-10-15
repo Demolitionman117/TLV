@@ -3,6 +3,7 @@ A tool to structure five-field timeline data for store in a graph database, whic
 
 This is the whole project as Microsoft Visual Studio project. 
 
+NOTE!! that the tool requiers the graph database Neo4j 
 
 The five-field timeline format is described in Windows Forensic Analysis Toolkit, Third Edition(chapter 7).  
 The timeline data can be generated with the help of free tools avilable on(chapter 7): 
